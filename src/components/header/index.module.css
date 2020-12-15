@@ -50,13 +50,14 @@
 }
 .numberOfItems {
   position: absolute;
-  width: 20px;
+  width: 24px;
+  padding-top: 4px;
   height: 20px;
   border-radius: 50%;
   background-color: red;
   color: white;
   position: absolute;
-  left: 95%;
+  left: 94%;
   top: 58%;
   cursor: pointer;
   align-items: center;

@@ -2,12 +2,12 @@ import React from 'react';
 import styles from './index.module.css';
 
 const Orders = () => {
-  let listOfOrders = localStorage.getItem('itemsInCart');
-  console.log(listOfOrders);
+  let itemsInCart = localStorage.getItem('itemsInCart');
+  console.log(itemsInCart);
   return (
     <div className={styles.ordersWrapper}>
       <div className={styles.myOrders}>My Orders</div>
-      <div className={styles.listOfOrders}>{listOfOrders}</div>
+      <div className={styles.listOfOrders}>{itemsInCart}</div>
     </div>
   );
 };

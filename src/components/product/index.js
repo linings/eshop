@@ -3,7 +3,7 @@ import styles from './index.module.css';
 import cart from '../../public/cart.png';
 
 const Product = ({ name, image, objectId }) => {
-  let [itemsInCart, setItemsInCart] = useState([]);
+  let [itemsInCart, setItemsInCart] = useState(0);
 
   localStorage.setItem('itemsInCart', itemsInCart);
 
@@ -24,7 +24,7 @@ const Product = ({ name, image, objectId }) => {
       <h3 className={styles.productHeading}>{name}</h3>
       <button
         className={styles.productCartImage}
-        onClick={(e) => setItemsInCart(e)}
+        onClick={(e) => setItemsInCart(itemsInCart + 1)}
       >
         <img src={cart} alt="cart"></img>
       </button>
