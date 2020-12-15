@@ -1,14 +1,14 @@
 import React from 'react';
-
+import Orders from '../orders';
 import PageLayout from '../page-layout';
-import HomePage from '../homePage';
 
-const Home = () => {
+const MyOrders = () => {
   return (
     <div>
       <PageLayout />
-      <HomePage />
+      <Orders/>
     </div>
   );
 };
-export default Home;
+
+export default MyOrders;

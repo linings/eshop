@@ -1,20 +1,18 @@
-import getCookie from '../../utils/cookie';
+import RESTAPI from '../../REST API';
 
-const saveImageInDatabase = () => {
-  const file = document.getElementById('uploadInput').files[0];
-  const ownerId = getCookie('x-auth-token');
-  const ownerName = localStorage.getItem('username');
+const saveItemInDatabase = async (information) => {
+  console.log(RESTAPI.name);
+  console.log(JSON.stringify(information));
 
-  const formData = new FormData();
+  const promise = await fetch(RESTAPI.name, {
+    method: 'POST',
+    body: JSON.stringify(information),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
 
-  formData.append('file', file);
-  formData.append('upload_preset', 'ml_default');
-
-  return {
-      ownerName,
-      ownerId,
-      formData
-  }
+  await promise.json();
 };
 
-export default saveImageInDatabase;
+export default saveItemInDatabase;

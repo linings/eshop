@@ -1,0 +1,24 @@
+.myOrders {
+  align-items: center;
+  text-align: center;
+  background-color: rgba(237, 28, 36, 1);
+  color: #ffffff;
+  width: 1700px;
+  height: 89px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  padding-left: 30px;
+}
+.ordersWrapper {
+  position: absolute;
+  top: 200px;
+  left: 6%;
+}

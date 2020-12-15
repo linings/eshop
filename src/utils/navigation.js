@@ -1,7 +1,7 @@
 const getNavigation = () => {
   const authLinks = [
     {
-      title: '#photo',
+      title: '',
       href: '/cart',
     },
     {

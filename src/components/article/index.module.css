@@ -3,13 +3,12 @@
   width: 1745px;
   top: 180px;
   left: 104px;
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: auto;
 }
 .heading,
 .name,
-.image,
-.btnSave {
+.image {
   float: left;
   clear: left;
   height: 89px;
@@ -22,7 +21,6 @@
   letter-spacing: 0em;
   font-style: normal;
   font-weight: normal;
-  color: rgba(196, 196, 196, 1);
 }
 .heading {
   display: flex;
@@ -73,4 +71,10 @@
   border: none;
   margin-left: 1468px;
   text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0em;
+  font-style: normal;
+  font-weight: normal;
 }
