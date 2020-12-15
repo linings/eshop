@@ -1,0 +1,25 @@
+.link {
+  color: grey;
+  text-decoration: none;
+  list-style-type: none;
+}
+.link:hover{
+  color: #FFFFFF;
+  background: #ED1C24;
+  font-weight: bold;
+  padding: 62px 25px;
+}
+.list-item {
+  width: 200px;
+  height: 150px;
+  left: 1292px;
+  top: 1px;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 23px;
+  line-height: 27px;
+  display: flex;
+  float: right;
+  align-items: center;
+  text-align: center;
+}

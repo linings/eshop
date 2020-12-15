@@ -1,0 +1,76 @@
+.inputField {
+  position: absolute;
+  width: 1745px;
+  top: 180px;
+  left: 104px;
+  margin: 0;
+  padding: 0;
+}
+.heading,
+.name,
+.image,
+.btnSave {
+  float: left;
+  clear: left;
+  height: 89px;
+  width: 1695px;
+  font-family: Roboto;
+  margin: 20px;
+  padding-left: 30px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0em;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(196, 196, 196, 1);
+}
+.heading {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(237, 28, 36, 1);
+  color: #ffffff;
+}
+.name {
+  width: 1330px;
+  height: 104px;
+  background: #f8f8f8;
+  border: 1px solid #6f6f6f;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.price {
+  left: 1449px;
+  width: 375px;
+  margin-top: 20px;
+  height: 104px;
+  background: #f8f8f8;
+  border: 1px solid #6f6f6f;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: Roboto;
+  padding-left: 30px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0em;
+  font-style: normal;
+  font-weight: normal;
+}
+.image {
+  width: 1727px;
+  height: 104px;
+  background: #f8f8f8;
+  border: 1px solid #6f6f6f;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.btnSave {
+  width: 280px;
+  height: 89px;
+  background: #ed1c24;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  margin-left: 1468px;
+  text-align: center;
+}
