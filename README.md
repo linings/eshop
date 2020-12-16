@@ -1,3 +1,17 @@
+ - This is a Single page application for listing all products in an online shop, as well as giving the
+   users the ability to order.
+ - On Products Page all available products are listed.When the user click on the cart icon the number of items
+   in the cart is increased.
+ - On Order Page all orders of the current user are listed, they have id, list of the chosen items,price in total and
+   status of the order.
+ - On New Product Page, the user can create new product.When the new product is submitted the user is navigated to Products
+   Page.
+
+   This Project is using React as main UI framework.
+   The state management is done with Redux.
+   Backendless is used for database.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
