@@ -2,8 +2,11 @@ import React from 'react';
 
 import styles from './index.module.css';
 import saveItemInDatabase from '../saveImageinDatabase';
+import { useHistory } from 'react-router-dom';
 
-const inputsField = () => {
+const InputsField = () => {
+  const history = useHistory();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -20,6 +23,7 @@ const inputsField = () => {
     e.target.name.value = '';
     e.target.price.value = '';
     e.target.image.value = '';
+    history.push('/');
   };
 
   return (
@@ -48,4 +52,4 @@ const inputsField = () => {
   );
 };
 
-export default inputsField;
+export default InputsField;

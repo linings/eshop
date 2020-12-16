@@ -12,8 +12,8 @@ const store = createStore(
 );
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Navigation />
-  </Provider>,
+    <Provider store={store}>
+      <Navigation />
+    </Provider>,
   document.getElementById('root')
 );

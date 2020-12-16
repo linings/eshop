@@ -10,9 +10,9 @@ const Navigation = () => {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/addProducts" exact component={AddProducts} />
-        <Route path="/products" exact component={Home} />
-        <Route path="/myOrders" exact component={MyOrders} />
+        <Route path="/addProducts" component={AddProducts} />
+        <Route path="/products" component={Home} />
+        <Route path="/myOrders" component={MyOrders} />
       </Switch>
     </BrowserRouter>
   );

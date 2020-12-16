@@ -1,8 +1,6 @@
 import RESTAPI from '../../REST API';
 
 const saveItemInDatabase = async (information) => {
-  console.log(RESTAPI.name);
-  console.log(JSON.stringify(information));
 
   const promise = await fetch(RESTAPI.name, {
     method: 'POST',

@@ -2,7 +2,7 @@ const getNavigation = () => {
   const authLinks = [
     {
       title: '',
-      href: '/cart',
+      href: '/myOrders',
     },
     {
       title: 'Add Products',

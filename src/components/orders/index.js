@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './index.module.css';
 import { useSelector } from 'react-redux';
-import { v4 as uuidv4 } from 'uuid';
 
 const Orders = () => {
   const cart = useSelector((state) => state.isCartFullReducer);
@@ -19,9 +18,6 @@ const Orders = () => {
     return acc;
   }, '');
 
-  console.log(sumPrices);
-  console.log(itemsNames);
-
   const getRandomInt = (min, max) => {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -35,7 +31,6 @@ const Orders = () => {
         <div className={styles.id}>
           {cart.length !== 0 ? 'Order # ' + getRandomInt(1000, 6001) : null}
         </div>
-
         <div className={styles['cart-product-name']}>{itemsNames}</div>
         <div className={styles['cart-product-price']}>{sumPrices}</div>
         <div className={styles.payment}>
