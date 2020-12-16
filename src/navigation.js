@@ -1,9 +1,8 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './components/home';
 import AddProducts from './components/article/addProducts';
-import UserContext from './Context';
 import MyOrders from './components/myOrdersPage';
 
 const Navigation = () => {
