@@ -5,12 +5,12 @@ import logo from '../../public/logo1.jpg';
 import LinkComponent from '../link';
 import getNavigation from '../../utils/navigation';
 import cart from '../../public/cart-grey.png';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
   const links = getNavigation();
-  let num = localStorage.getItem('numberOfItemsInCart');
 
-  console.log(num);
+  const counter = useSelector((state) => state.counterReducer);
 
   return (
     <header className={styles.navigation}>
@@ -29,7 +29,7 @@ const Header = () => {
       })}
 
       <img src={cart} alt="cart" className={styles.finalCart}></img>
-      <div className={styles.numberOfItems}>{num}</div>
+      <div className={styles.numberOfItems}>{counter}</div>
     </header>
   );
 };

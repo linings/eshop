@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styles from './index.module.css';
+import { increment } from '../../actions';
 import cart from '../../public/cart.png';
+import { useDispatch } from 'react-redux';
 
 const Product = ({ name, image, objectId }) => {
-  let [itemsInCart, setItemsInCart] = useState(0);
-
-  localStorage.setItem('itemsInCart', itemsInCart);
+  const dispatch = useDispatch();
 
   const addItemToCart = (e) => {
     let currentItem = e.target.parentNode;
@@ -13,9 +13,8 @@ const Product = ({ name, image, objectId }) => {
     if (currentItem.nodeName === 'BUTTON') {
       currentItem = currentItem.parentNode;
     }
-    console.log(currentItem);
-    console.log(itemsInCart);
-    setItemsInCart(itemsInCart.push(currentItem));
+    dispatch(increment());
+    console.log(currentItem.children);
   };
 
   return (
@@ -24,7 +23,7 @@ const Product = ({ name, image, objectId }) => {
       <h3 className={styles.productHeading}>{name}</h3>
       <button
         className={styles.productCartImage}
-        onClick={(e) => setItemsInCart(itemsInCart + 1)}
+        onClick={(e) => addItemToCart(e)}
       >
         <img src={cart} alt="cart"></img>
       </button>
